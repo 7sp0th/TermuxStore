@@ -1,2 +1,7 @@
 #/bin/bash
 echo Welcome to Tershop
+if [ "$HOME" == "/data/data/com.termux/files/home" ]; then
+echo 请进入Termux-chroot模式再运行本程序;
+else
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/YadominJinta/TermuxStore-Src/master/config/$1/config.sh)"
+fi

@@ -1,3 +1,3 @@
 #/bin/bash
-apt install aria2 git
+apt install curl git
 mv sft $PREFIX/ && echo Install Successfully
